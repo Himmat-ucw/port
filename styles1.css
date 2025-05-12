@@ -1,0 +1,131 @@
+/* Global Layout & Font */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f4f6f9 0%, #eef2f7 100%);
+    color: #2c3e50;
+    line-height: 1.8;
+    font-size: 16px;
+    padding: 2rem;
+  }
+  
+  /* Headings with accent lines and fade-in */
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    animation: fadeIn 1s ease;
+  }
+  
+  h1 {
+    color: #1a237e;
+    font-size: 2rem;
+    border-bottom: 3px solid #4fc3f7;
+  }
+  
+  h2 {
+    color: #0d47a1;
+    border-bottom: 2px solid #90caf9;
+  }
+  
+  h3 {
+    color: #1565c0;
+    border-bottom: 1px solid #bbdefb;
+  }
+  
+  /* Animated underline effect */
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #42a5f5;
+    border-radius: 2px;
+  }
+  
+  /* Paragraphs */
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Links */
+  a {
+    color: #0077cc;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #004c99;
+    text-decoration: underline;
+  }
+  
+  /* Email links */
+  a[href^="mailto"] {
+    color: #0d47a1;
+    font-weight: bold;
+  }
+  
+  /* Lists */
+  ul {
+    padding-left: 1.5rem;
+  }
+  
+  /* Contact Box with Glassmorphism Effect */
+  #contact {
+    background: rgba(223, 240, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border-left: 5px solid #0288d1;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-top: .5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  #contact:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contact p, #contact li {
+    margin: 0.3rem 0;
+  }
+  
+  /* Appendix Highlight */
+  #appendix {
+    background: #fffde7;
+    border-left: 5px solid #ffca28;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Profile Picture Styling */
+  img {
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(10px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+  
